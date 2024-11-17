@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:clipToOutline="true">
+
+    <!-- Avatar -->
+    <ImageView
+        android:id="@+id/avatarImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/tummy"
+        android:layout_alignParentStart="true"
+        android:contentDescription="Avatar"
+        android:layout_marginEnd="8dp" />
+
+    <!-- Counter -->
+    <TextView
+        android:id="@+id/counterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="counter"
+        android:textSize="14sp"
+        android:layout_toEndOf="@id/avatarImage"
+        android:layout_alignTop="@id/avatarImage"
+        android:textColor="#000000" />
+
+    <!-- Nama dan Keterangan -->
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Govannnnnnnnnn gamtenk"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@id/counterText"
+        android:layout_toEndOf="@id/avatarImage"
+        android:layout_marginTop="4dp"
+        android:textColor="#000000" />
+
+    <!-- Gambar Utama -->
+    <ImageView
+        android:id="@+id/mainImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/hanip"
+        android:layout_below="@id/nameText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Main Image" />
+
+    <!-- Tombol Like -->
+    <TextView
+        android:id="@+id/likeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="like"
+        android:textSize="14sp"
+        android:textColor="#0000FF"
+        android:layout_below="@id/mainImage"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- Tombol Dislike -->
+    <TextView
+        android:id="@+id/dislikeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dislike"
+        android:textSize="14sp"
+        android:textColor="#0000FF"
+        android:layout_below="@id/mainImage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>
